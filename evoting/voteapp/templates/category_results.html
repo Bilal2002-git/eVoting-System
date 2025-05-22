@@ -1,0 +1,7 @@
+<h1>{{ category.name }} Results</h1>
+<ul>
+{% for candidate in candidates %}
+    <li>{{ candidate.name }} - {{ candidate.votes }} votes</li>
+{% endfor %}
+</ul>
+<a href="{% url 'results' %}">Back to all results</a>
